@@ -15,9 +15,12 @@ sites = {
 distances = {}
 
 # TODO здесь заполнение словаря
+for town in sites:
+    sites_temp = sites.copy()
+    sites_temp.pop(town) 
+#    distence = (sites_temp[0][0] - sites_temp[1][0]) ** 2
+#    + (sites_temp[1][0] - sites_temp[1][1]) ** 2
+#    distances.update({1: 1})
+    print(list(sites_temp.values())[0][0])
 
 print(distances)
-
-
-
-
