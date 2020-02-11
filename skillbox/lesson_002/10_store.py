@@ -50,6 +50,16 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
 # TODO здесь ваш код
+def inventorization(item):
+    lamp_code = goods[item]
+    lamps_item = store[lamp_code][0]
+    lamps_quantity = lamps_item['quantity']
+    lamps_price = lamps_item['price']
+    lamps_cost = lamps_quantity * lamps_price
+    print(item, ' -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+
+for item in goods.keys():
+    inventorization(item)
 
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
