@@ -10,5 +10,9 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
+for i in range(0, 11):
+    print(i)
 
+year_expense = map(lambda month: expenses*(1 + 0.03*month), range(0, 11))
+print((sum(year_expense)) - educational_grant*10)
 # TODO здесь ваш код
