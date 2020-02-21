@@ -30,6 +30,14 @@ store = {
     ],
 }
 
+print(store['12345'])
+for item_code in goods.values():
+    price = 0
+    for items in store[item_code]:
+        price  +=  items['quantity'] * items['price']
+        #print(item_code, items['quantity'], items['price'])
+    print('Цена', item_code, price)
+
 # Рассчитать на какую сумму лежит каждого товара на складе.
 #
 # Вывести суммарную стоимость каждого товара на складе c помощью циклов
@@ -45,9 +53,6 @@ store = {
 #         подсчет количества товара
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
-
-# TODO здесь ваш код
-
 
 
 
