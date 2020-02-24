@@ -10,4 +10,6 @@
 
 a, b = 179, 37
 
-# TODO здесь ваш код
+#WTF?
+c = int(a / b)
+print(c)

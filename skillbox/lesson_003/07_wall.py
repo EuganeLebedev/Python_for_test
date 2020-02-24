@@ -15,10 +15,10 @@ def block(start_x=0, start_y=0, width=100, high=50, step = 1):
     sd.lines([a, b, c, d], color=sd.random_color())
 
 
-for x in range(0, 10):
-    for y in range(0, 50):
+for x in range(0, 5):
+    for y in range(0, 5):
         if y % 2 != 0:
-            block(x/2, y)
+            block(x, y)
         else:
             block(x, y)
 # Нарисовать стену из кирпичей. Размер кирпича - 100х50
