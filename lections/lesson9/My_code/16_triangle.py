@@ -4,14 +4,15 @@ class Person:
 
 
 class Employee(Person):
-    def __init__(self, name, salary):
+    def __init__(self, salary):
         super().__init__(name)
         self.salary = salary
 
 
 class Client(Person):
-    pass
+    def __init__(self, name, phone):
+        super().__init__(name)
+        self.phone = phone
 
 
-
-
+Client.__mro__

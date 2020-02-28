@@ -1,22 +1,24 @@
 class Person:
     def __init__(self, name, lastname):
-        self.nanme = name
+        self.name = name
         self.lastname = lastname
 
     def to_dict(self):
         return {
-                "name": self.name,
-                "lastname": self.lastname
-                }
-    @staticmethod #Не получает объект первым параметром
+            "name": self.name,
+            "lastname": self.lastname
+        }
+
+    @staticmethod
     def foo():
         pass
 
     @classmethod
     def from_dict(cls, d):
-        return cls(d['name'], d['lastname']
-
-Person.foo()
+        return cls(**d)
 
 person = Person.from_dict({})
+Person.foo()
 p1 = Person("Ivan", "Ivanov")
+
+d = p1.to_dict()
