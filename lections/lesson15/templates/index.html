@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Forms</title>
+		<link href="static/main.css" type="text/css" rel="stylesheet" />
+		<style>
+
+<!--
+		h1 {
+		color: red;
+		margin-bottom: 50px;
+		}
+
+		label {
+		color: blue;
+		}
+
+		#get-title {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		color: purple;
+		}
+		.name-label {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		color: orange;
+		}
+		.label {
+		font-weight: bold;
+		}
+		form label.name-lable {
+		font-size: 25px;
+		}
+
+-->
+
+		</style>
+	</head>
+	<body>
+		<h1 style="color: green; margin-bottom: 50px">Post form</h1>
+		{% if name and lastname %}
+		<h1>Form data</h1>
+		<div>{{ name }}</div>
+		<div>{{ lastname }}</div>
+		{% endif %}
+		<h1 id="post-title">POST</h1>
+		<form action="http://localhost:5000/register" method="post">
+			<label class="name-label label">Name<input name="name" type="text"/></label>
+			<label class=label>Lastname<input name="lastname" type="text"/></label>
+			<input type="submit" value="Submit"/>
+		</form>
+		<h1 id="get-title">GET</h1>
+		<form>
+			<label class="name-label">Name<input name="name" type="text"/></label>
+			<label class=label>Lastname<input name="lastname" type="text"/></label>
+			<input type="submit" value="Submit"/>
+		</form>
+
+	</body>
+
+<html>

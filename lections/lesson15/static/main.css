@@ -1,0 +1,27 @@
+		h1 {
+		color: red;
+		margin-bottom: 50px;
+		}
+
+		label {
+		color: blue;
+		}
+
+		#get-title {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		color: purple;
+		}
+		.name-label {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		color: orange;
+		}
+		.label {
+		font-weight: bold;
+		}
+		form label.name-lable {
+		font-size: 25px;
+		}
+
+
