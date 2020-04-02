@@ -1,0 +1,19 @@
+<h1>Blog</h1>
+
+{% if posts %}
+    {% for post in posts %}
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <hr>
+    {% endfor %}
+{% endif %}
+
+<h3>Add new post</h3>
+<p>
+  <form method="POST" action="{% url 'blog:new_post' %}">
+    {% csrf_token %}
+    <input type="text" name="title"/>
+    <textarea name="content"></textarea>
+    <input type="submit"/>
+  </form>
+</p>
