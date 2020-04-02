@@ -1,0 +1,10 @@
+	<h1>AAAAAAAAAAAA</h1>
+	<p>
+	<form method="POST" action="{% url 'blog:post' %}">
+        {% csrf_token %}
+	<input type="text" name="title"/>
+	<textarea name="content" />
+	<input type="submit">
+
+	</form>
+	</p>
