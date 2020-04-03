@@ -6,4 +6,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Hello from Django. This is blog index.")
+    return render(request, 'blog/index.html')
+
+def post(request):
+    return render(request, 'blog/post.html')
