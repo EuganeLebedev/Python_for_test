@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'probe.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'e_lebedev',
+        'NAME': 'blog_tms',
         'USER': 'e_lebedev',
         'PASSWORD': '1234',
         'HOST': '127.1',
